@@ -21,7 +21,7 @@ import torch
 from deepspeed import comm as dist
 
 try:
-    from torch._six import inf
+    from torch import inf
 except ModuleNotFoundError:
     from torch import inf
 
